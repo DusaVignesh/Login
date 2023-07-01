@@ -1,3 +1,4 @@
+import 'package:authentication/sent.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'login-page.dart';
@@ -13,7 +14,8 @@ void main() async {
     routes: {
       'login-page': (context) => const LoginPage(),
       'otp-page': (context) => const OtpPage(),
-      'home-page': (context) => const HomePage()
+      'home-page': (context) => HomeScreen(),
+      'sent': (context) => Sent(),
     },
   ));
 }
